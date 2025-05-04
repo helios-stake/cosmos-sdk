@@ -45,6 +45,13 @@ in an upcoming release of the Cosmos SDK per our [release process](https://githu
 
 * [Crisis](./crisis/README.md) - *Deprecated* halting the blockchain under certain circumstances (e.g. if an invariant is broken).
 * [Params](./params/README.md) - *Deprecated* Globally available parameter store.
+the core functionality of your blockchain.  They can be thought of as ways to extend the
+capabilities of your blockchain or further specialize it.
+
+* [Authz](./authz/README.md) - Authorization for accounts to perform actions on behalf of other accounts.
+* [Feegrant](./feegrant/README.md) - Grant fee allowances for executing transactions.
+* [Group](./group/README.md) - Allows for the creation and management of on-chain multisig accounts.
+* [NFT](./nft/README.md) - NFT module implemented based on [ADR43](https://docs.cosmos.network/main/architecture/adr-043-nft-module.html).
 
 To learn more about the process of building modules, visit the [building modules reference documentation](https://docs.cosmos.network/main/building-modules/intro).
 

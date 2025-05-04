@@ -110,6 +110,10 @@ Ref: https://keepachangelog.com/en/1.0.0/
 * (baseapp) [#24526](https://github.com/cosmos/cosmos-sdk/pull/24526) Fix incorrect retention height when `commitHeight` equals `minRetainBlocks`.
 * (x/protocolpool) [#24594](https://github.com/cosmos/cosmos-sdk/pull/24594) Fix NPE when initializing module via depinject.
 * (x/epochs) [#24610](https://github.com/cosmos/cosmos-sdk/pull/24610) Fix semantics of `CurrentEpochStartHeight` being set before epoch has started.
+### Bug Fixes
+
+* (baseapp) [#23879](https://github.com/cosmos/cosmos-sdk/pull/23879) Ensure finalize block response is not empty in the defer check of FinalizeBlock to avoid panic by nil pointer.
+* (query) [#23884](https://github.com/cosmos/cosmos-sdk/pull/23884) Fix NPE in query pagination.
 
 ## [v0.50.13](https://github.com/cosmos/cosmos-sdk/releases/tag/v0.50.13) - 2025-03-12
 
@@ -122,6 +126,7 @@ Ref: https://keepachangelog.com/en/1.0.0/
 ### Bug Fixes
 
 * [GHSA-x5vx-95h7-rv4p](https://github.com/cosmos/cosmos-sdk/security/advisories/GHSA-x5vx-95h7-rv4p) Fix Group module can halt chain when handling a malicious proposal.
+* [GHSA-x5vx-95h7-rv4p](https://github.com/cosmos/cosmos-sdk/security/advisories/GHSA-x5vx-95h7-rv4p) Fix Group module can halt chain when handling a malicious proposal
 
 ## [v0.50.11](https://github.com/cosmos/cosmos-sdk/releases/tag/v0.50.11) - 2024-12-16
 
